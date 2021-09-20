@@ -1,39 +1,44 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href='resources/css/style.css' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+        <link href="resources/css/style.css" rel="stylesheet">
+        <script src="resources/javascript/script.js" async></script>
         <title>Ehong Kuo</title>
     </head>
     <body>
-        <nav>
-            <div class="container">
-                <a href='#home'>Home</a>
-                <a href='#about-me'>About Me</a>
-                <a href='#projects'>Projects</a>
-                <a href='#contact'>Contact</a>
-            </div>
-        </nav>
+        <!-- Header -->
         <header>
-            <div class="container">
-                <h1>Ehong C. Kuo</h1>
-                <p>Software Engineer</p>
-                <a class="button" href="#">Contact</a>
+            <div class="content">
+                <nav class="desktop">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a>About Me</a></li>
+                        <li><a>Projects</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>         
+                </nav>
+                <nav class="mobile">
+
+                </nav>
             </div>
         </header>
-        
-        <main>
-            <div class="container">
-                <figure>
-                    <img src='resources/images/FB_Profile.jpg' height="300px">
-                </figure>
-                <h2>About Me</h2>
-                <p>Hello there! I am a student at UC Davis studying Computer Science, of the class of 2023. My current interests include Web Development as well as Machine Learning.</p>
-                <p>My current skillset includes proficiency in C/C++, Python, and Javascript, HTML and CSS.</p>
-                <p>I am currently searching for software engineering internship and research opportunities over the fall as well as for the summer of 2022.</p>
-            </div>
-        </main>
-        <footer>
 
-        </footer>
+        <!-- Main Content -->
+        <div class="main-content">
+          <div class="introduction grid">
+            <div class="box hello">
+              <p>Hi. Im Ehong.</p>
+              <p>A Developer.</p>
+              <p class='additional'>I'm also a aspiring web designer with an interest in machine learning.</p>
+            </div>
+            <div class="image">
+              <img id="profile" src="resources/images/FB_Profile.jpg">
+            </div>
+          </div>
+        </div>
     </body>
 </html>
