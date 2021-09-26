@@ -38,14 +38,13 @@ header {
 }
 
 .grid {
-  border: solid 2px black;
   display: grid;
   grid-template: repeat(12, 1fr) / repeat(12, 1fr);
   gap: 40px;
   width: 100%;
-  height: 100%;
-
+  height: 90%;
 }
+
 .box {
   background: linear-gradient(340deg,#f8c6ff -3.41%,rgba(255,196,255,0) 52%),#ffeec4;
   display: flex;
@@ -54,14 +53,11 @@ header {
   align-content: center;
   width: 100%;
   height: 100%;
-}
-
-.hello {
   grid-area: 2 / 2 / span 10 / span 5;
   border-radius: 15%;
 }
 
-.hello p {
+.box p {
   color: black;
   font-family: 'Marcellus', serif;
   font-size: 4rem;
@@ -69,31 +65,49 @@ header {
   padding-left: 2rem;
 }
 
-.hello p.additional {
+.box p.additional {
   color: gray;
   font-size: 1.2rem;
   padding: 2rem;
 }
 
+/* Photo Gallery */
+
 .image {
-  grid-area: 2 / 8 / 10 / 12;
-  border: solid 2px black;
-  height: 100%;
+  grid-area: 2 / 8 / 12 / 12;
   width: 100%;
-  justify-self: center;
-  align-self: center;
+  height: 100%;
 }
 
-.image img {
+image figure {
+  width: 100%;
+  height: 100%;
+}
+
+.image figure img {
   max-width: 100%;
-  max-height: 100%;
+  height: auto;
+}
+
+.image figure figcaption {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.3rem;
+}
+
+/*
+
+.image figure img {
+  display: flex;
+  max-width: 100%;
+  max-height: 50%;
   align-self: center;
   justify-self: center;
   border: 10px solid lightgray;
   transform: rotate(-3deg);
+  transition: all .5s;
 }
 
 .image img:hover {
-  transition: all .2s ease-in-out;
   transform: scale(1.05);
 }
