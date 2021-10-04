@@ -73,6 +73,7 @@ header .desktop li:hover {
   gap: 40px;
   width: 100%;
   height: 90%;
+  /* border: solid 2px black; */
 }
 
 .box {
@@ -135,19 +136,78 @@ image figure {
   transform: scale(1.05);
   cursor: pointer;
 }
-/*
 
-.image figure img {
-  display: flex;
-  max-width: 100%;
-  max-height: 50%;
-  align-self: center;
-  justify-self: center;
-  border: 10px solid lightgray;
-  transform: rotate(-3deg);
-  transition: all .5s;
+.about {
+  grid-area: 3 / 2 / 12 / 7;
 }
 
-.image img:hover {
-  transform: scale(1.05);
+.about h1 {
+  padding-bottom: 1rem;
+}
+
+.about p {
+  color: rgb(126, 126, 126);
+  font-size: 1.1rem;
+  line-height: 1.3em;
+  margin: 1.5rem auto;
+}
+
+.skills {
+  background: linear-gradient(223.65deg,rgba(10,207,131,0) 60.59%,rgba(10,207,131,.62) 113.24%),#191919;  
+  grid-area: 2 / 8 / 12 / 12;
+  border-radius: 15%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.skills h1 {
+  background: transparent;
+  color: whitesmoke;
+  font-family: 'Marcellus', serif;
+  padding: 3rem 3rem 0 0;
+  text-align: right;
+}
+
+.skills p {
+  position: relative;
+  background: transparent;
+  color: whitesmoke;
+  font-family: 'Marcellus', serif;
+  font-size: 1.2rem;
+  text-align: left;
+  padding: 1rem 2rem;
+}
+
+.bar {
+  margin: 0 2rem;
+  width: 80%;
+  height: .5rem;
+  background-color: rgb(70, 70, 70);
+}
+
+.level {
+  text-align: right;
+  background-color: darkgrey;
+  height: 100%;
+}
+
+.cpp { width: 90%; }
+.python { width: 50%; }
+.web { width: 75%; }
+.git {width: 50%; }
+.linux {width: 60%; }
+
+p.cp {
+  text-align: center;
+}
+
+p.interested {
+  padding: .3rem 2rem;
+}
+
+.skills i {
+  display: inline-block;
+  padding: 1rem 2rem;
 }
