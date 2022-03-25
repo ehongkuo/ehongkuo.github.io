@@ -5,5 +5,5 @@ Check out the quick demo below for some of the interactions I implemented with t
 
 ![Website Demo](resources/images/demo.gif)
 
-Feel free to check out my current website at the url: ehongkuo.com
+Feel free to check out my current website at the url: **ehongkuo.com**  
 Source code available at: 
